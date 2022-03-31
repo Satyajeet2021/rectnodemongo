@@ -1,0 +1,229 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer {
+  background: #000;
+    min-height: 150px;
+}
+.footer li{
+  display: inline;
+  padding: 10px;
+}
+.footer li > a{
+  color: #fff;
+}
+
+/* css */
+.sc-bdvvtL.jMbjwd {
+  background: #fff;
+}
+.footer .logo {
+  width: auto;
+    text-align: center;
+    padding: 20px;
+}
+.footer .logo > img {
+  width: 30%;
+  height: 50px;
+}
+.footer ul {
+  text-align: center;
+}
+.sc-bdvvtL.jMbjwd .logo1 > img
+{
+  width: auto;
+  height: 50px;
+}
+.main.Serach_aircraft {
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+}
+
+/* search list view */
+.listbox-area {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background: #eee;
+}
+
+[role="listbox"] {
+  margin: 1em 0 0;
+  padding: 0;
+  /* min-height: 18em; */
+  border: 1px solid #aaa;
+  background: white;
+}
+
+[role="listbox"]#ss_elem_list {
+  position: relative;
+  max-height: 18em;
+  overflow-y: auto;
+}
+
+[role="listbox"] + *,
+.listbox-label + * {
+  margin-top: 1em;
+}
+
+[role="group"] {
+  margin: 0;
+  padding: 0;
+}
+
+[role="group"] > [role="presentation"] {
+  display: block;
+  margin: 0;
+  padding: 0 0.5em;
+  font-weight: bold;
+  line-height: 2;
+  background-color: #ccc;
+}
+
+[role="option"] {
+  position: relative;
+  display: block;
+  padding: 0 1em 0 1.5em;
+  line-height: 1.8em;
+}
+
+[role="option"].focused {
+  background: #bde4ff;
+}
+
+[role="option"][aria-selected="true"]::before {
+  position: absolute;
+  left: 0.5em;
+  content: "✓";
+}
+
+button[aria-haspopup="listbox"] {
+  position: relative;
+  padding: 5px 10px;
+  width: 150px;
+  border-radius: 0;
+  text-align: left;
+}
+
+button[aria-haspopup="listbox"]::after {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-top-color: currentColor;
+  border-bottom: 0;
+  content: "";
+}
+
+button[aria-haspopup="listbox"][aria-expanded="true"]::after {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-top: 0;
+  border-bottom-color: currentColor;
+  content: "";
+}
+
+button[aria-haspopup="listbox"] + [role="listbox"] {
+  position: absolute;
+  margin: 0;
+  width: 9.5em;
+  max-height: 10em;
+  border-top: 0;
+  overflow-y: auto;
+}
+
+[role="toolbar"] {
+  display: flex;
+}
+
+[role="toolbar"] > * {
+  border: 1px solid #aaa;
+  background: #ccc;
+}
+
+[role="toolbar"] > [aria-disabled="false"]:focus {
+  background-color: #eee;
+}
+
+button {
+  font-size: inherit;
+}
+
+button[aria-disabled="true"] {
+  opacity: 50%;
+}
+
+.move-right-btn::after {
+  content: " →";
+}
+
+.move-left-btn::before {
+  content: "← ";
+}
+
+.annotate {
+  color: #366ed4;
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+.offscreen {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  font-size: 14px;
+  white-space: nowrap;
+}
